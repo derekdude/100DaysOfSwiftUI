@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D01373DF259A91D400551AC1 /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01373CC259A91D300551AC1 /* CupcakeCornerApp.swift */; };
+		D01373E0259A91D400551AC1 /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01373CC259A91D300551AC1 /* CupcakeCornerApp.swift */; };
+		D01373E1259A91D400551AC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01373CD259A91D300551AC1 /* ContentView.swift */; };
+		D01373E2259A91D400551AC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01373CD259A91D300551AC1 /* ContentView.swift */; };
+		D01373E3259A91D400551AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01373CE259A91D300551AC1 /* Assets.xcassets */; };
+		D01373E4259A91D400551AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01373CE259A91D300551AC1 /* Assets.xcassets */; };
+		D01373F0259AA43600551AC1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01373EF259AA43600551AC1 /* Order.swift */; };
+		D01373F1259AA43600551AC1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01373EF259AA43600551AC1 /* Order.swift */; };
+		D01373F7259AAE0800551AC1 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01373F6259AAE0800551AC1 /* AddressView.swift */; };
+		D01373F8259AAE0800551AC1 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01373F6259AAE0800551AC1 /* AddressView.swift */; };
+		D0D2B5E0259BC0670083EBB0 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2B5DF259BC0670083EBB0 /* CheckoutView.swift */; };
+		D0D2B5E1259BC0670083EBB0 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2B5DF259BC0670083EBB0 /* CheckoutView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D01373CC259A91D300551AC1 /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
+		D01373CD259A91D300551AC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D01373CE259A91D300551AC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D01373D3259A91D400551AC1 /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01373D6259A91D400551AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D01373DB259A91D400551AC1 /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01373DD259A91D400551AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D01373DE259A91D400551AC1 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D01373EF259AA43600551AC1 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		D01373F6259AAE0800551AC1 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		D0D2B5DF259BC0670083EBB0 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D01373D0259A91D300551AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D01373D8259A91D400551AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D01373C6259A91D300551AC1 = {
+			isa = PBXGroup;
+			children = (
+				D01373CB259A91D300551AC1 /* Shared */,
+				D01373D5259A91D400551AC1 /* iOS */,
+				D01373DC259A91D400551AC1 /* macOS */,
+				D01373D4259A91D400551AC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D01373CB259A91D300551AC1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D01373CC259A91D300551AC1 /* CupcakeCornerApp.swift */,
+				D01373CD259A91D300551AC1 /* ContentView.swift */,
+				D01373EF259AA43600551AC1 /* Order.swift */,
+				D01373F6259AAE0800551AC1 /* AddressView.swift */,
+				D0D2B5DF259BC0670083EBB0 /* CheckoutView.swift */,
+				D01373CE259A91D300551AC1 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D01373D4259A91D400551AC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D01373D3259A91D400551AC1 /* CupcakeCorner.app */,
+				D01373DB259A91D400551AC1 /* CupcakeCorner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D01373D5259A91D400551AC1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D01373D6259A91D400551AC1 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D01373DC259A91D400551AC1 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D01373DD259A91D400551AC1 /* Info.plist */,
+				D01373DE259A91D400551AC1 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D01373D2259A91D300551AC1 /* CupcakeCorner (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D01373E7259A91D400551AC1 /* Build configuration list for PBXNativeTarget "CupcakeCorner (iOS)" */;
+			buildPhases = (
+				D01373CF259A91D300551AC1 /* Sources */,
+				D01373D0259A91D300551AC1 /* Frameworks */,
+				D01373D1259A91D300551AC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CupcakeCorner (iOS)";
+			productName = "CupcakeCorner (iOS)";
+			productReference = D01373D3259A91D400551AC1 /* CupcakeCorner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D01373DA259A91D400551AC1 /* CupcakeCorner (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D01373EA259A91D400551AC1 /* Build configuration list for PBXNativeTarget "CupcakeCorner (macOS)" */;
+			buildPhases = (
+				D01373D7259A91D400551AC1 /* Sources */,
+				D01373D8259A91D400551AC1 /* Frameworks */,
+				D01373D9259A91D400551AC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CupcakeCorner (macOS)";
+			productName = "CupcakeCorner (macOS)";
+			productReference = D01373DB259A91D400551AC1 /* CupcakeCorner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D01373C7259A91D300551AC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					D01373D2259A91D300551AC1 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					D01373DA259A91D400551AC1 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = D01373CA259A91D300551AC1 /* Build configuration list for PBXProject "CupcakeCorner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D01373C6259A91D300551AC1;
+			productRefGroup = D01373D4259A91D400551AC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D01373D2259A91D300551AC1 /* CupcakeCorner (iOS) */,
+				D01373DA259A91D400551AC1 /* CupcakeCorner (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D01373D1259A91D300551AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D01373E3259A91D400551AC1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D01373D9259A91D400551AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D01373E4259A91D400551AC1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D01373CF259A91D300551AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D01373F0259AA43600551AC1 /* Order.swift in Sources */,
+				D01373F7259AAE0800551AC1 /* AddressView.swift in Sources */,
+				D0D2B5E0259BC0670083EBB0 /* CheckoutView.swift in Sources */,
+				D01373E1259A91D400551AC1 /* ContentView.swift in Sources */,
+				D01373DF259A91D400551AC1 /* CupcakeCornerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D01373D7259A91D400551AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D01373F1259AA43600551AC1 /* Order.swift in Sources */,
+				D01373F8259AAE0800551AC1 /* AddressView.swift in Sources */,
+				D0D2B5E1259BC0670083EBB0 /* CheckoutView.swift in Sources */,
+				D01373E2259A91D400551AC1 /* ContentView.swift in Sources */,
+				D01373E0259A91D400551AC1 /* CupcakeCornerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D01373E5259A91D400551AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D01373E6259A91D400551AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D01373E8259A91D400551AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWXYVT8P3G;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.santolo.CupcakeCorner;
+				PRODUCT_NAME = CupcakeCorner;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D01373E9259A91D400551AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWXYVT8P3G;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.santolo.CupcakeCorner;
+				PRODUCT_NAME = CupcakeCorner;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D01373EB259A91D400551AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZWXYVT8P3G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santolo.CupcakeCorner;
+				PRODUCT_NAME = CupcakeCorner;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D01373EC259A91D400551AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZWXYVT8P3G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santolo.CupcakeCorner;
+				PRODUCT_NAME = CupcakeCorner;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D01373CA259A91D300551AC1 /* Build configuration list for PBXProject "CupcakeCorner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01373E5259A91D400551AC1 /* Debug */,
+				D01373E6259A91D400551AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D01373E7259A91D400551AC1 /* Build configuration list for PBXNativeTarget "CupcakeCorner (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01373E8259A91D400551AC1 /* Debug */,
+				D01373E9259A91D400551AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D01373EA259A91D400551AC1 /* Build configuration list for PBXNativeTarget "CupcakeCorner (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01373EB259A91D400551AC1 /* Debug */,
+				D01373EC259A91D400551AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D01373C7259A91D300551AC1 /* Project object */;
+}
