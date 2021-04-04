@@ -5,6 +5,7 @@
 //  Created by Derek Santolo on 3/29/21.
 //
 
+import LocalAuthentication
 import SwiftUI
 
 struct LoadingView: View {
@@ -36,23 +37,46 @@ struct User: Identifiable, Comparable {
 }
 
 struct ContentView: View {
-    enum LoadingState {
-        case loading, success, failed
-    }
-
-    var loadingState = LoadingState.loading
+    @State private var isUnlocked = false
     
     var body: some View {
-        Group {
-            if loadingState == .loading {
-                LoadingView()
+        VStack
+        {
+            if self.isUnlocked
+            {
+                Text("Unlocked")
             }
-            else if loadingState == .success {
-                SuccessView()
+            else
+            {
+                Text("Locked")
             }
-            else if loadingState == .failed {
-                FailedView()
+        }
+        .onAppear(perform: authenticate)
+    }
+    
+    func authenticate() {
+        let context = LAContext()
+        var error: NSError?
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "We need to unlock your data."
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
+                                   localizedReason: reason) { success, authenticationError in
+                DispatchQueue.main.async {
+                    if success {
+                        self.isUnlocked = true
+                    }
+                    
+                    else {
+                        // there was a problem
+                    }
+                }
             }
+        }
+        
+        else {
+            // no biometrics
         }
     }
 }
