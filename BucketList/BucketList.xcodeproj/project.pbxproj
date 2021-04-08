@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0B704D0261A551000F4CAFA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B704CF261A551000F4CAFA /* MapView.swift */; };
+		D0B704D3261BB43F00F4CAFA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B704D2261BB43F00F4CAFA /* MapView.swift */; };
+		D0B74346261F7413003E1433 /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B74345261F7413003E1433 /* MainMapView.swift */; };
 		D0DFF14D2612880D0025417A /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DFF14C2612880D0025417A /* BucketListApp.swift */; };
 		D0DFF14F2612880D0025417A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DFF14E2612880D0025417A /* ContentView.swift */; };
 		D0DFF1512612880E0025417A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DFF1502612880E0025417A /* Assets.xcassets */; };
 		D0DFF1542612880E0025417A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DFF1532612880E0025417A /* Preview Assets.xcassets */; };
+		D0FD17C0261E11C900CF6A85 /* MKPointAnnotation-ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FD17BF261E11C900CF6A85 /* MKPointAnnotation-ObservableObject.swift */; };
+		D0FD17C3261E12C600CF6A85 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FD17C2261E12C600CF6A85 /* EditView.swift */; };
+		D0FD17C8261E14CF00CF6A85 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FD17C7261E14CF00CF6A85 /* Result.swift */; };
+		D0FD17D0261E185D00CF6A85 /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FD17CF261E185D00CF6A85 /* MKPointAnnotation-Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D0B704CF261A551000F4CAFA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D0B704D2261BB43F00F4CAFA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D0B74345261F7413003E1433 /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
 		D0DFF1492612880D0025417A /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DFF14C2612880D0025417A /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		D0DFF14E2612880D0025417A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0DFF1502612880E0025417A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0DFF1532612880E0025417A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D0DFF1552612880E0025417A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0FD17BF261E11C900CF6A85 /* MKPointAnnotation-ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObservableObject.swift"; sourceTree = "<group>"; };
+		D0FD17C2261E12C600CF6A85 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		D0FD17C7261E14CF00CF6A85 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		D0FD17CF261E185D00CF6A85 /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				D0DFF14C2612880D0025417A /* BucketListApp.swift */,
+				D0B704D2261BB43F00F4CAFA /* MapView.swift */,
 				D0DFF14E2612880D0025417A /* ContentView.swift */,
-				D0B704CF261A551000F4CAFA /* MapView.swift */,
+				D0B74345261F7413003E1433 /* MainMapView.swift */,
+				D0FD17C7261E14CF00CF6A85 /* Result.swift */,
+				D0FD17BF261E11C900CF6A85 /* MKPointAnnotation-ObservableObject.swift */,
+				D0FD17C2261E12C600CF6A85 /* EditView.swift */,
+				D0FD17CF261E185D00CF6A85 /* MKPointAnnotation-Codable.swift */,
 				D0DFF1502612880E0025417A /* Assets.xcassets */,
 				D0DFF1552612880E0025417A /* Info.plist */,
 				D0DFF1522612880E0025417A /* Preview Content */,
@@ -141,8 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FD17D0261E185D00CF6A85 /* MKPointAnnotation-Codable.swift in Sources */,
+				D0FD17C8261E14CF00CF6A85 /* Result.swift in Sources */,
+				D0B74346261F7413003E1433 /* MainMapView.swift in Sources */,
 				D0DFF14F2612880D0025417A /* ContentView.swift in Sources */,
-				D0B704D0261A551000F4CAFA /* MapView.swift in Sources */,
+				D0FD17C3261E12C600CF6A85 /* EditView.swift in Sources */,
+				D0FD17C0261E11C900CF6A85 /* MKPointAnnotation-ObservableObject.swift in Sources */,
+				D0B704D3261BB43F00F4CAFA /* MapView.swift in Sources */,
 				D0DFF14D2612880D0025417A /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
