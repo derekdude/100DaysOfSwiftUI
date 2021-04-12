@@ -22,6 +22,11 @@ struct FlagView: View
 }
 
 struct ContentView: View {
+    let labels = [
+        "Estonia": "Flag with three horizotal stripes of equal size. Top strip blue, middle stripe black, bottom stripe white",
+        "France": "Flag with three vertical stripes of equal size. Left stripe blue, middle stripe white, right stripe red"
+        // more flag descriptiones here
+    ]
     @State private var showingAlert = false
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
@@ -77,6 +82,7 @@ struct ContentView: View {
                                         .degrees(number==correctAnswer ? animationAmount : 0),
                                         axis: /*@START_MENU_TOKEN@*/(x: 0.0, y: 1.0, z: 0.0)/*@END_MENU_TOKEN@*/)
                                     .opacity(number == correctAnswer ? 1 : opacityAnimVal)
+                                    .accessibility(label: Text(self.labels[self.countries[number], default: "Unknown flag"]))
                         }
                     }
                     

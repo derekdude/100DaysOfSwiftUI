@@ -69,7 +69,7 @@ struct ContentView: View {
             .navigationBarTitle("Bookworm")
             .navigationBarItems(leading: EditButton(), trailing: Button(action: {
                 self.showingAddScreen.toggle()
-            }) {
+            }) { 
                 Image(systemName: "plus")
             })
             .sheet(isPresented: $showingAddScreen) {
