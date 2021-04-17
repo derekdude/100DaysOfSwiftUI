@@ -22,8 +22,6 @@ class Order: Codable, ObservableObject
     
     required init(from decoder: Decoder) throws
     {
-        
-        
         let container = try decoder.container(keyedBy: CodingKeys.self)
         orderData = try container.decode(OrderData.self, forKey: .orderData)
     }

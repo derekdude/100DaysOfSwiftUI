@@ -68,8 +68,8 @@ struct ContentView: View {
                 }
                 .onTapGesture {
                     self.showingImagePicker = true
-                    
                 }
+                
                 VStack
                 {
                     HStack

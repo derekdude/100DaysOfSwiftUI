@@ -13,6 +13,10 @@ struct HabitExpand: View
     @State private var showingAlert = false
     @ObservedObject var habitHolder = HabitArray()
     
+    init(habit: Habit) {
+        self.habit = habit
+    }
+    
     var body: some View
     {
         NavigationView
@@ -53,6 +57,6 @@ struct HabitExpand: View
 
 struct HabitExpand_Previews: PreviewProvider {
     static var previews: some View {
-        HabitExpand()
+        HabitExpand(habit: Habit(name: "", description: ""))
     }
 }

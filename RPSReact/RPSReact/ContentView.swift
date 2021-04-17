@@ -24,7 +24,7 @@ struct MoveView: View
 }
 
 struct EndView: View
-{
+{ 
     var score: Int
     
     var body: some View

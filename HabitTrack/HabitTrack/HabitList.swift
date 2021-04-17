@@ -19,7 +19,10 @@ struct HabitList: View
             {
                 ForEach(habitHolder.habits, id: \.self)
                 { habit in
-                    habit
+                    NavigationLink(
+                        destination: HabitExpand(habit: habit)) {
+                        habit
+                    }
                 }
             }
             .navigationBarItems(leading: Text("Habits")

@@ -18,7 +18,7 @@ class HabitArray: ObservableObject
         {
             return false
         }
-        
+         
         else
         {
             habits.append(habit)
