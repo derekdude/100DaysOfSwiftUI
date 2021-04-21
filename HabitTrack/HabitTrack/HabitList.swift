@@ -25,9 +25,10 @@ struct HabitList: View
                     }
                 }
             }
-            .navigationBarItems(leading: Text("Habits")
+            .navigationBarItems(
+                leading: Text("Habits")
                     .font(.largeTitle),
-                    trailing: NavigationLink(
+                trailing: NavigationLink(
                         destination: AddHabit(habitHolder: habitHolder),
                         label: {
                             Image(systemName: "plus")

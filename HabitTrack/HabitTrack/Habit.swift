@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Habit: View, Hashable
+struct Habit: View, Hashable, Codable
 {
     var name: String
     var description: String
