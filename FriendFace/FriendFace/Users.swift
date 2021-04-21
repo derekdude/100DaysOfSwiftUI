@@ -27,8 +27,8 @@ class Users: ObservableObject {
                 print("No data in response \(error?.localizedDescription ?? "No data response")")
                 return
             }
-            if let decodedUser = try? JSONDecoder().decode([User].self, from: data) {
-                self.arrayOfUsers = decodedUser
+            if let decodedUsers = try? JSONDecoder().decode([User].self, from: data) {
+                self.arrayOfUsers = decodedUsers
             }
             
         }.resume()

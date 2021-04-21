@@ -7,22 +7,6 @@
 
 import SwiftUI
 
-struct MoveView: View
-{
-    let move: String
-    
-    var body: some View
-    {
-        Text(move)
-            .font(.largeTitle)
-            .padding(5)
-            .background(Color.white)
-            .shadow(radius: 10)
-            .border(Color.gray)
-            .hoverEffect()
-    }
-}
-
 struct EndView: View
 { 
     var score: Int
@@ -41,7 +25,7 @@ struct ContentView: View
 {
     let possibleMoves = ["Rock", "Paper", "Scissors"]
     @State private var questionCount = 0
-    @State private var isShowingDetailView = false
+    @State private var isShowingEndView = false
     @State private var currentMove = Int.random(in: 0...2)
     @State private var shouldWin = Bool.random() ? "Win" : "Lose"
     @State private var score = 0
@@ -52,13 +36,26 @@ struct ContentView: View
         {
             ZStack
             {
-                LinearGradient(gradient: Gradient(colors: [Color.white, .gray, Color.blue]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
-                VStack
+                LinearGradient(gradient: Gradient(colors: [Color.gray, Color.white]), startPoint: .top, endPoint: .bottomLeading).edgesIgnoringSafeArea(.all)
+                VStack(alignment: .center)
                 {
-                    NavigationLink(destination: EndView(score: score), isActive: $isShowingDetailView) {EmptyView()}
-                    Text("Score: \(score)")
-                    Text("Opponent's Move: \(possibleMoves[currentMove])")
-                    Text("Goal: \(shouldWin)")
+                    NavigationLink(destination: EndView(score: score), isActive: $isShowingEndView) {EmptyView()}
+                    HStack {
+                        Text("Score: ")
+                            .font(.custom("Georgia", size: 24, relativeTo: .headline))
+                            .shadow(radius: 50)
+                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                        Text("\(score)")
+                            .font(.custom("Georgia", size: 24))
+                        
+                    }
+                        
+                    Text("\(shouldWin) against")
+                        .font(.title3)
+                        .offset(y: 50)
+                    Spacer()
+                    
+                    MoveView(move: possibleMoves[currentMove], isOpponentMove: true)
                     
                     Spacer()
                     
@@ -72,12 +69,18 @@ struct ContentView: View
                             })
                             {
                                 MoveView(move: move)
-                            }
+                            }                            
                         }
+                        .padding()
                     }
                     .padding()
+                    
+                    Text("icons by icons8")
+                        .fontWeight(.ultraLight)
+                        .offset(y: 24)
                 }
                 .navigationBarTitle("RPSReact")
+
             }
         }
     }
@@ -124,7 +127,7 @@ struct ContentView: View
         
         questionCount += 1
         
-        if(questionCount==10) { isShowingDetailView = true}
+        if(questionCount==10) { isShowingEndView = true}
         
         currentMove = Int.random(in: 0...2)
         shouldWin = Bool.random() ? "Win" : "Lose"

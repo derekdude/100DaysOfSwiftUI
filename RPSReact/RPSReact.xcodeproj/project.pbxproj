@@ -11,6 +11,7 @@
 		D068E9D92532846C00F41E1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068E9D82532846C00F41E1F /* ContentView.swift */; };
 		D068E9DB2532846F00F41E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D068E9DA2532846F00F41E1F /* Assets.xcassets */; };
 		D068E9DE2532846F00F41E1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D068E9DD2532846F00F41E1F /* Preview Assets.xcassets */; };
+		D0DBBE8C26309FD300F9303B /* MoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DBBE8B26309FD300F9303B /* MoveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		D068E9DA2532846F00F41E1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D068E9DD2532846F00F41E1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D068E9DF2532846F00F41E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0DBBE8B26309FD300F9303B /* MoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				D068E9D62532846C00F41E1F /* RPSReactApp.swift */,
+				D0DBBE8B26309FD300F9303B /* MoveView.swift */,
 				D068E9D82532846C00F41E1F /* ContentView.swift */,
 				D068E9DA2532846F00F41E1F /* Assets.xcassets */,
 				D068E9DF2532846F00F41E1F /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DBBE8C26309FD300F9303B /* MoveView.swift in Sources */,
 				D068E9D92532846C00F41E1F /* ContentView.swift in Sources */,
 				D068E9D72532846C00F41E1F /* RPSReactApp.swift in Sources */,
 			);

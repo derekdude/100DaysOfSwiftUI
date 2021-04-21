@@ -21,6 +21,13 @@ struct FriendsListView: View {
                 }
             }
         }.navigationBarTitle("\(user.name)'s Friends", displayMode: .inline)
+        .toolbar {
+            Button(action: {
+                print("Add friend")
+            }) {
+                Image(systemName: "plus")
+            }
+        }
     }
 }
 

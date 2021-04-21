@@ -40,7 +40,7 @@ struct DetailUserView: View {
             Section(header: Text("Show Friends"))
             {
                 Toggle(isOn: $isShowingFriendList) {
-                    Text("show \(user.name)'s friends")
+                    Text("Show \(user.name)'s Friends")
                 }
             }
             
