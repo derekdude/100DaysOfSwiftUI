@@ -7,31 +7,36 @@
 
 import SwiftUI
 
-class DelayedUpdater: ObservableObject {
-    var value = 0 {
-        willSet {
-            objectWillChange.send()
-        }
-    }
-    
-    init() {
-        for i in 1...10 {
-            DispatchQueue.main.asyncAfter(deadline: .now() + Double(i)) {
-                self.value += 1
-            }
-        }
-    }
-}
-
 struct ContentView: View {
+    var prospects = Prospects()
+    
     var body: some View {
-        Image("example")
-            .interpolation(.none)
-            .resizable()
-            .scaledToFit()
-            .frame(maxHeight: .infinity)
-            .background(Color.black)
-            .edgesIgnoringSafeArea(.all)
+        TabView {
+            ProspectsView(filter: .none)
+                .tabItem {
+                    Image(systemName: "person.3")
+                    Text("Everyone")
+                }
+            
+            ProspectsView(filter: .contacted)
+                .tabItem {
+                    Image(systemName: "checkmark.circle")
+                    Text("Contacted")
+                }
+            
+            ProspectsView(filter: .uncontacted)
+                .tabItem {
+                    Image(systemName: "questionmark.diamond")
+                    Text("Uncontacted")
+                }
+            
+            MeView()
+                .tabItem {
+                    Image(systemName: "person.crop.square")
+                    Text("Me")
+                }
+        }
+        .environmentObject(prospects)
     }
 }
 

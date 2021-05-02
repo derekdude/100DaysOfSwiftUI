@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+extension AnyTransition {
+    static var moveAndFade: AnyTransition {
+        let insertion = AnyTransition.move(edge: .leading)
+            .combined(with: .opacity)
+        let removal = AnyTransition.move(edge: .trailing)
+            .combined(with: .opacity)
+        return .asymmetric(insertion: insertion, removal: removal)
+    }
+}
+
 struct EndView: View
 { 
     var score: Int
@@ -27,6 +37,7 @@ struct ContentView: View
     @State private var questionCount = 0
     @State private var isShowingEndView = false
     @State private var currentMove = Int.random(in: 0...2)
+    @State private var isShowingOpponentMove = true
     @State private var shouldWin = Bool.random() ? "Win" : "Lose"
     @State private var score = 0
     
@@ -47,15 +58,16 @@ struct ContentView: View
                             .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                         Text("\(score)")
                             .font(.custom("Georgia", size: 24))
-                        
                     }
                         
                     Text("\(shouldWin) against")
                         .font(.title3)
-                        .offset(y: 50)
+                    
                     Spacer()
                     
                     MoveView(move: possibleMoves[currentMove], isOpponentMove: true)
+                            .transition(.moveAndFade)
+                            .frame(maxWidth: .infinity)
                     
                     Spacer()
                     
@@ -65,22 +77,21 @@ struct ContentView: View
                         { number in
                             let move = possibleMoves[number]
                             Button(action: {
-                                processAnswer(move)
+                                processAnswer(move)                                
                             })
                             {
                                 MoveView(move: move)
-                            }                            
+                            }
                         }
                         .padding()
                     }
-                    .padding()
                     
                     Text("icons by icons8")
                         .fontWeight(.ultraLight)
                         .offset(y: 24)
+                
                 }
                 .navigationBarTitle("RPSReact")
-
             }
         }
     }
@@ -129,7 +140,10 @@ struct ContentView: View
         
         if(questionCount==10) { isShowingEndView = true}
         
-        currentMove = Int.random(in: 0...2)
+        withAnimation {
+            currentMove = Int.random(in: 0...2)
+        }
+        
         shouldWin = Bool.random() ? "Win" : "Lose"
     }
     

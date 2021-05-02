@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MoveView: View
 {
-    let move: String
+    var move: String
+    var isShowingImage = true
     var isOpponentMove = false
     var fontColor: Color {
         if isOpponentMove {
@@ -35,14 +36,16 @@ struct MoveView: View
     
     var body: some View
     {
-        VStack {
-            Image(imageName)
-            Text(move)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .autocapitalization(.allCharacters)
-                .foregroundColor(fontColor)
-        }
-            
+            VStack (alignment: .center) {
+                    Image(imageName)
+                        .rotationEffect(Angle(degrees: 360))
+                    Text(move)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .autocapitalization(.allCharacters)
+                        .foregroundColor(fontColor)
+                }
+            .frame(maxWidth: .infinity,  alignment: .center)
+            .aspectRatio(contentMode: .fit)        
     }
 }
 
